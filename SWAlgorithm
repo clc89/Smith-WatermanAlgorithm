@@ -1,6 +1,28 @@
+import sys
+firstSequence = sys.argv[1]
+secondSequence = sys.argv[2]
+sequence=['']*2
 match = 1;
 mismatch = -1;
 gap = -2;
+
+#A parser for fasta format. Returns the order (first line) followed by the sequence by line.
+def parse_fasta(fasta): 
+  x=file(fasta)
+  order = []
+  sequences = {}
+     
+  for line in x:
+    if line.startswith('>'):
+      name = line[1:].rstrip('\n')
+      name = name.replace('_', ' ')
+      order.append(name)
+      sequences[name] = ''
+    else:
+      sequences[name] += line.rstrip('\n').rstrip('*')
+             
+  print "%d sequences found" % len(order)
+  return order, sequences
 
 def match_score(a, b):
     if a == b:
@@ -43,3 +65,7 @@ def finalize(align1, align2):
     print align1
     print symbol
     print align2
+	
+def main()
+	sequence[0]= parse_fasta(firstSequence)
+	sequence[1]= parse_fasta(secondSequence)
