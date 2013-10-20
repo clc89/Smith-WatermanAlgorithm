@@ -24,6 +24,7 @@ def parse_fasta(fasta):
   print "%d sequences found" % len(order)
   return order, sequences
 
+#possible issue-double blanks returns gap
 def match_score(a, b):
     if a == b:
         return match
@@ -66,6 +67,32 @@ def finalize(align1, align2):
     print symbol
     print align2
 	
-def main()
+def generate_matrix(length1,length2):
+	return [[0]*length1 for i in xrange(length2)]
+
+def score_matrix(matrix,seq1,seq2):
+	
+	highestScore=0
+	bestLocation=(0,0)
+	
+	for i in xrange(1,len(seq1)+1):
+		for j in xrange(1,len(seq2)+1):
+			matrix[i][j] = max(
+			#case 1, pointing left
+				matrix[i][j-1] + gap,
+			#pointing up
+				matrix[i-1][j] + gap,
+			#diagonal up 
+				matrix[i-1][j-1] + match_score(x[i-1], y[j-1])
+            )
+			if A[i][j] >= best:
+				highestScore = matrix[i][j]
+                bestLocation = (i,j)
+	
+	return highestScore,bestLocation
+	
+	
+def main():
 	sequence[0]= parse_fasta(firstSequence)
 	sequence[1]= parse_fasta(secondSequence)
+	score=generate_matrix(len(sequence[0])+1,len(sequence[1])+1)
