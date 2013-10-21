@@ -99,11 +99,13 @@ Sbjct  433  A  433
 Score = 123 bits(136)
 
 ANALYIS:
-blastn showed fairly consistent results for most cases. However, the last two sequences, AY898791 and AY325264, despite both matching rather strongly with AY803735, scored much lower when compared to eachother, and only on a range of slightly under 200 pairs rather than the over 400 both sequences shared with AY803735.
+BLAST is the Basic Local Alignment Search Tool available through the National Center for Biotechnology Information's website. BLAST accepts potentially large files and processes them, returning the highest scoring alignments available between the two sequences. Blastn is the version particularly designed for nucleotides.
+
+Blastn showed fairly consistent results for most cases. However, the last two sequences, AY898791 and AY325264, despite both matching rather strongly with AY803735, scored much lower when compared to eachother, and only on a range of slightly under 200 pairs rather than the over 400 both sequences shared with AY803735.
 
 Perhaps more interesting about AY898791 and AY325264, the first 134 pairs had a relatively strong score at 53.6bits(58), matching 92/134 pairs. This suggests that, despite a relatively strong first hundred and last two hundred pairs, the middle 120 or so pairs between the two sequence segments are notably weaker.
 
-Also interesting is that, due to certain parameters set, small segments can trigger a high enough score to be noticed, despite being quite seperated. Consider:
+It is also interesting to note that, due to certain parameters set, small segments can trigger a high enough score to be noticed, despite being quite seperated. Consider:
 
 Query  306  GATCCTGGCCCACA  319
             |||| |||||||||
