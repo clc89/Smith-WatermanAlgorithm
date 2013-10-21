@@ -38,11 +38,11 @@ def finalize(align1, align2):
     align2 = align2[::-1]
     i,j = 0,0;
     
-  symbol = ''
-  found = 0
-  score = 0
-  identity = 0
-  for i in range of(0,len(align1)):
+	symbol = ''
+	found = 0
+	score = 0
+	identity = 0
+	for i in range of(0,len(align1)):
         if align1[i] == align2[i]:                
             symbol = symbol + align1[i]
             identity = identity + 1
