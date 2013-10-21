@@ -1,0 +1,114 @@
+Query   = AY898791
+Subject = AY803735
+
+
+Query  1    ATGAGTCTCTCTGCAGCTGACAAGACCAGGGTGAAGACCCTATGGGGCAAAATTGAAGCG  60
+            ||||||||||| ||    |||||| ||  ||| ||| |  | |||| |||   |||| | 
+Sbjct  3    ATGAGTCTCTCAGCGAAAGACAAGGCCCAGGTTAAGGCATTGTGGGCCAAGGCTGAATCT  62
+
+Query  61   AGATCTGCCGAGTTGGGTGGTGAAGCTTTGGCCAGGATGTTTGTTACGTACCCCCAGACC  120
+            |   | || ||  |||| | ||||||| | | ||||||||| ||| | ||||||||||||
+Sbjct  63   AAGACCGCTGACCTGGGAGCTGAAGCTCTAGGCAGGATGTTGGTTTCCTACCCCCAGACC  122
+
+Query  121  AAGACCTATTTTTCCGATTGGGG-GCAGAATCTG-GGTCCACAGAACGA-AAAAGTCAAG  177
+            |||||||| ||  |  | ||||| ||||     | ||||| ||   |   |||||| | |
+Sbjct  123  AAGACCTACTTCACTCACTGGGGAGCAGGGGAGGTGGTCCCCAATTCCCCAAAAGTGAGG  182
+
+Query  178  ACTCATGGTGCAGTCATCATGGCGGCTGTGGGGAAAGCTGTCAAAAATATTGATAATCTT  237
+            |  ||||||||   ||||||| | || ||||| || ||  ||||||  |||||| | |||
+Sbjct  183  AAACATGGTGCCACCATCATGTCCGCCGTGGGCAAGGCAATCAAAAGCATTGATGACCTT  242
+
+Query  238  GTCGGTGCTACGACTCAGCTCAGTGAGCTGCATGCCTTCAAGCTTCGGGTGGATCCTGCC  297
+               ||||||  ||     ||||| ||||||||||||||| |||| ||||||||||||  |
+Sbjct  243  CCAGGTGCTCTGAGCGCCCTCAGCGAGCTGCATGCCTTCCAGCTCCGGGTGGATCCTTGC  302
+
+Query  298  AACTTTAAGATCCTGGCCCACAACATGATGTTGGTAATCGCCATGTACTTCCCTGGCGAG  357
+            |||||||||||||||||||||||||| ||  |||   ||||  || ||||||| |  || 
+Sbjct  303  AACTTTAAGATCCTGGCCCACAACATCATCGTGGCCTTCGCTTTGCACTTCCCCGCAGAT  362
+
+Query  358  TTCACTCCAGAGGTCCACCTCTCAGTTGACAAGTTCCTTGCGTGCCTGGCTTTGGCTCTG  417
+            |||||||| ||||  |||||| ||||||||||||||||      | ||||||||||||||
+Sbjct  363  TTCACTCCGGAGGCTCACCTCGCAGTTGACAAGTTCCTGAACAACTTGGCTTTGGCTCTG  422
+
+Query  418  TCTGAGAAGT  427
+            ||||||||||
+Sbjct  423  TCTGAGAAGT  432
+
+Score   = 264 bits(292)
+
+
+Query   = AY325264
+Subject = AY803735
+
+
+Query  1    ATGAGTCTCTCTGCCAAAGACAAAGCTGCCGTCAAAACCCTGTGGGCCAAGATCGCTGGA  60
+            ||||||||||| || |||||||| ||    || ||  |  |||||||||||   |||| |
+Sbjct  3    ATGAGTCTCTCAGCGAAAGACAAGGCCCAGGTTAAGGCATTGTGGGCCAAG---GCTGAA  59
+
+Query  61   ---AAGGCTGACGACATCGGACACGATGCTCTCTCCAGGATGTTGATTGTCTACCCCCAG  117
+               ||| | |  ||| | |||   || |||||   |||||||||| ||  ||||||||||
+Sbjct  60   TCTAAGACCGCTGACCTGGGAGCTGAAGCTCTAGGCAGGATGTTGGTTTCCTACCCCCAG  119
+
+Query  118  ACCAAGACCTACTTCTCTCACTGGAAAG------ACCTGAGCCCAGGCTCTGCCCCA---  168
+            ||||||||||||||| ||||||||  ||      |  ||  |||   |  | |||||   
+Sbjct  120  ACCAAGACCTACTTCACTCACTGGGGAGCAGGGGAGGTGGTCCC---CAATTCCCCAAAA  176
+
+Query  169  GTGAGGAAACACGGCAAGACTGTGATGGGAGGCGTTGCTGAGGCTGTCAGCAAAATCGAT  228
+            ||||||||||| ||    ||  | |||   | ||| |   ||||  |||  |  || |||
+Sbjct  177  GTGAGGAAACATGGTGCCACCATCATGTCCGCCGTGGGCAAGGCAATCAAAAGCATTGAT  236
+
+Query  229  GACCTTAATGCCGGACTCCTGAAC---CTCAGTGAGCTCCATGCTTTCCAGCTGCGTGTG  285
+            ||||||   |  |  ||| ||| |   ||||| ||||| ||||| |||||||| || |||
+Sbjct  237  GACCTTCCAGGTG--CTC-TGAGCGCCCTCAGCGAGCTGCATGCCTTCCAGCTCCGGGTG  293
+
+Query  286  GACCCCGCCAATTTCAAGATTCTGTCCCACAACATCCTCGTGGTTCTGGCCACTTTG---  342
+            || ||   ||| || ||||| ||| ||||||||||| ||||||   | ||   ||||   
+Sbjct  294  GATCCTTGCAACTTTAAGATCCTGGCCCACAACATCATCGTGGCCTTCGC---TTTGCAC  350
+
+Query  343  TTCCCCGCCGACTTCACTCCTGAGGCTCATGTTGCAATGGACAAGTTCCTCT-CAGCTCT  401
+            |||||||| || |||||||| ||||||||  | ||| | |||||||||||   || || |
+Sbjct  351  TTCCCCGCAGATTTCACTCCGGAGGCTCACCTCGCAGTTGACAAGTTCCTGAACAACT-T  409
+
+Query  402  GGCTCTGGCCATGTCTGAGAAGT  424
+            |||| ||||  ||||||||||||
+Sbjct  410  GGCTTTGGCTCTGTCTGAGAAGT  432
+
+Score = 179 bits(198)
+
+
+Query   = AY898791
+Subject = AY325264
+
+
+Query  256  CTCAGTGAGCTGCATGCCTTCAAGCTTCGGGTGGATCCTGCCAACTTTAAGATCCTGGCC  315
+            ||||||||||| ||||| ||| |||| || ||||| || ||||| || ||||| ||| ||
+Sbjct  253  CTCAGTGAGCTCCATGCTTTCCAGCTGCGTGTGGACCCCGCCAATTTCAAGATTCTGTCC  312
+
+Query  316  CACAACATGATGTTGGTAATCGCCATGTACTTCCCTGGCGAGTTCACTCCAGAGGTCCAC  375
+            ||||||||  |  ||||  | ||||  |  ||||| | ||| |||||||| ||||  || 
+Sbjct  313  CACAACATCCTCGTGGTTCTGGCCACTTTGTTCCCCGCCGACTTCACTCCTGAGGCTCAT  372
+
+Query  376  CTCTCAGTTGACAAGTTCCTTGCGTGCCTGGCTTTGGCTCTGTCTGAGAAGTACCGCTAA  435
+             |  || | |||||||||||  |    |||||| ||||  |||||||||||||| | |||
+Sbjct  373  GTTGCAATGGACAAGTTCCTCTCAGCTCTGGCTCTGGCCATGTCTGAGAAGTACAGATAA  432
+
+Query  436  A  436
+            |
+Sbjct  433  A  433
+
+Score = 123 bits(136)
+
+ANALYIS:
+blastn showed fairly consistent results for most cases. However, the last two sequences, AY898791 and AY325264, despite both matching rather strongly with AY803735, scored much lower when compared to eachother, and only on a range of slightly under 200 pairs rather than the over 400 both sequences shared with AY803735.
+
+Perhaps more interesting about AY898791 and AY325264, the first 134 pairs had a relatively strong score at 53.6bits(58), matching 92/134 pairs. This suggests that, despite a relatively strong first hundred and last two hundred pairs, the middle 120 or so pairs between the two sequence segments are notably weaker.
+
+Also interesting is that, due to certain parameters set, small segments can trigger a high enough score to be noticed, despite being quite seperated. Consider:
+
+Query  306  GATCCTGGCCCACA  319
+            |||| |||||||||
+Sbjct  54   GATCTTGGCCCACA  41
+
+Score = 21.2bits(22)
+
+Because of the local-alignment algorithm looking for any large enough score no matter how seperated the segments are, as well as the low threshold needed to get strong results for aligning AY898791 and AY325264, smaller red-herring segments can show up in the results
