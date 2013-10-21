@@ -41,7 +41,8 @@ def finalize(align1, align2):
     found = 0
     score = 0
     identity = 0
-    for i in range of(0,len(align1)):
+    
+    for i in range(0,len(align1)):
 	if align1[i] == align2[i]:                
 		symbol = symbol + align1[i]
 		identity = identity + 1
@@ -91,7 +92,7 @@ def score_matrix(matrix,seq1,seq2):
 	return highestScore,bestLocation
 	
 	
-def main():
-	sequence[0]= parse_fasta(firstSequence)
-	sequence[1]= parse_fasta(secondSequence)
-	score=generate_matrix(len(sequence[0])+1,len(sequence[1])+1)
+#def main():
+sequence[0]= parse_fasta(firstSequence)
+sequence[1]= parse_fasta(secondSequence)
+finalize(sequence[0], sequence[1])
