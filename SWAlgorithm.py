@@ -8,21 +8,30 @@ gap = -2;
 
 #A parser for fasta format. Returns the order (first line) followed by the sequence by line.
 def parse_fasta(fasta): 
-  x=file(fasta)
-  order = []
-  sequences = {}
-     
-  for line in x:
-    if line.startswith('>'):
-      name = line[1:].rstrip('\n')
-      name = name.replace('_', ' ')
-      order.append(name)
-      sequences[name] = ''
-    else:
-      sequences[name] += line.rstrip('\n').rstrip('*')
-             
-  print "%d sequences found" % len(order)
-  return order, sequences
+	sequences=''
+	sep=''
+	with open(fasta) as f:
+			next(f)
+			for line in f:
+				
+					sequences += (line.strip())
+					sep='\n'
+	return sequences
+#   x=file(fasta)
+#   order = []
+#   sequences = {}
+#      
+#   for line in x:
+#     if line.startswith('>'):
+#       name = line[1:].rstrip('\n')
+#       name = name.replace('_', ' ')
+#       order.append(name)
+#       sequences[name] = ''
+#     else:
+#       sequences[name] += line.rstrip('\n').rstrip('*')
+#              
+#   print "%d sequences found" % len(order)
+#   return order, sequences
 
 #possible issue-double blanks returns gap
 def match_score(a, b):
@@ -41,25 +50,27 @@ def finalize(align1, align2):
     found = 0
     score = 0
     identity = 0
-    
-    for i in range(0,len(align1)):
-	if align1[i] == align2[i]:                
-		symbol = symbol + align1[i]
-		identity = identity + 1
-		score += match_score(align1[i], align2[i])
+    length=min(len(align1),len(align2))
+    print length
+    for i in range(0,length-1):
+		if align1[i] == align2[i]:
+			symbol = symbol + align1[i]
+			identity = identity + 1
+			score += match_score(align1[i], align2[i])
     
 	# if they are not identical and none of them is gap
-	elif align1[i] != align2[i] and align1[i] != '-' and align2[i] != '-': 
-		score += match_score(align1[i], align2[i])
-		symbol += ' '
-		found = 0
+		elif align1[i] != align2[i] and align1[i] != '-' and align2[i] != '-': 
+			score += match_score(align1[i], align2[i])
+			symbol += ' '
+			found = 0
     
         #if one of them is a gap, output a space
-	elif align1[i] == '-' or align2[i] == '-':          
-		symbol += ' '
-		score += gap_penalty
+		elif align1[i] == '-' or align2[i] == '-':          
+			symbol += ' '
+			score += gap_penalty
 
-	identity = float(identity) / len(align1) * 100
+		identity = float(identity) / len(align1) * 100
+		print i
     
     print 'Identity =', "%3.3f" % identity, 'percent'
     print 'Score =', score

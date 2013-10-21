@@ -73,7 +73,7 @@ Query  402  GGCTCTGGCCATGTCTGAGAAGT  424
             |||| ||||  ||||||||||||
 Sbjct  410  GGCTTTGGCTCTGTCTGAGAAGT  432
 
-Score = 179 bits(198)
+Score = 179 bits(198) 
 
 
 Query   = AY898791
