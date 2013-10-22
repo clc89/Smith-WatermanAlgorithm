@@ -7,6 +7,9 @@ Example use
 ======================
 from command line:
 
+navigate to the src folder
+
+
     python align.py seq1 seq2 
   
 
