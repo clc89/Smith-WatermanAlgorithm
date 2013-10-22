@@ -15,6 +15,8 @@ navigate to the src folder
 
 Example output
 =======================
+Results are saved to the results file.
+
     GCTACGACTCAGCTCAGTGAGCTGCATGCCTTCAAGCTTCGGGTGGAT-CCTGCCAACTT
      |  | | |      ||    |    | ||  | | |      | |     |  |     
     -CGCC-AATTTCA--AGAT-TC-T-GT-CCCAC-AACA--TCCTCGTGG--T-TCTGG-C
