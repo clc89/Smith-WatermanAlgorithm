@@ -51,8 +51,7 @@ def finalize(align1, align2):
     score = 0
     identity = 0
     length=min(len(align1),len(align2))
-    print length
-    for i in range(0,length-1):
+    for i in range(0,length):
 		if align1[i] == align2[i]:
 			symbol = symbol + align1[i]
 			identity = identity + 1
@@ -70,7 +69,6 @@ def finalize(align1, align2):
 			score += gap_penalty
 
 		identity = float(identity) / len(align1) * 100
-		print i
     
     print 'Identity =', "%3.3f" % identity, 'percent'
     print 'Score =', score
