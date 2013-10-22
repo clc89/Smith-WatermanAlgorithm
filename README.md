@@ -7,7 +7,9 @@ Example use
 ======================
 from command line:
 
-navigate to the src folder
+navigate to the src folder.
+
+pass the FASTA files as arguments.
 
 
     python align.py seq1 seq2 
